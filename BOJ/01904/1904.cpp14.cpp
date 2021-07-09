@@ -1,0 +1,1 @@
+#include <stdio.h>int dp[1000001];int fibo(int x) {	if (x == 1) {		return 1;	}	else if (x == 2) {		return 2;	}	if (dp[x] != 0) {		return dp[x] % 15746;	}	else {		return dp[x] = (fibo(x - 1) + fibo(x - 2) )% 15746;	}}int main() {	long long n;	dp[1] = 1;	dp[2] = 2;	scanf("%d", &n);	printf("%d", fibo(n));}

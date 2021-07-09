@@ -1,0 +1,1 @@
+#include <iostream>#include <string>using namespace std;string vps(string a) {	int cnt = 0;	for (int i = 0; i < a.size(); i++) {		if (a[i] == '(') ++cnt;		else --cnt;		if (cnt < 0) return "NO";	}	if (cnt == 0) return "YES";	else return "NO";}int main() {	int t;	cin >> t;	while (t--) {		string a;		cin >> a;		cout << vps(a)<<'\n';	}}

@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int a, b;	cin >> a >> b;	int c, d, e, res;	c = b % 10 * a;	d = b / 10 % 10 * a;	e = b / 100 * a;	res = a * b;	cout << c << endl;	cout << d << endl;	cout << e << endl;	cout << res << endl;}

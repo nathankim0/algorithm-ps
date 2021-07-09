@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int sum = 0;int f(int X, int A) {	return A*X;}int main() {	int n;	cin >> n;	int x, a;	while (n--) {		cin >> x >> a;		sum += f(x, a);	}	cout << sum;}

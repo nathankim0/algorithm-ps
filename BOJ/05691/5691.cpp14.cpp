@@ -1,0 +1,1 @@
+#include <iostream>#include <algorithm>using namespace std;int main() {	int a, b, c;	while (1) {		cin >> a >> b;		if (a==0 && b==0) break;		int tmp1, tmp2, tmp3;		tmp1 = 3 * a - (a + b);		tmp2 = 3 * b - (a + b);		c = (a + b) / 2;		int mn = min(tmp1, min(tmp2, c));		cout << mn << endl;	}}

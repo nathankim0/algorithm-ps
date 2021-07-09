@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	cin.tie(0);	ios::sync_with_stdio(false);	int t;	cin >> t;	int *a = new int[t];	int *b = new int[t];	for (int j = 0; j < t; j++) {		cin >> a[j] >> b[j];	}	for (int i = 0; i < t; i++) {		cout << a[i] + b[i] << '\n';	}	return 0;}

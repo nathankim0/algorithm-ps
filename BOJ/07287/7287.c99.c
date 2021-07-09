@@ -1,0 +1,1 @@
+#include <stdio.h>int main(){printf("9\njinyeob");return 0;}

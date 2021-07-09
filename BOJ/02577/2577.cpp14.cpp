@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int a, b, c;	int count[10] = { 0 };	cin >> a >> b >> c;	int prod = a * b * c;	while (prod != 0) {			for (int j = 0; j <= 9; j++) {				if (prod % 10 == j) count[j]++;			}			prod /= 10;	}	for (int i = 0; i <= 9; i++) cout << count[i] << endl;	return 0;}

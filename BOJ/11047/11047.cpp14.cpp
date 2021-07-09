@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int n, k;	cin >> n >> k;	int a[100001];	for (int i = 0; i < n; i++) {		cin >> a[i];	}	int cnt = 0;	while (n > 0) {		if (k >= a[n-1]) {			while (k >= a[n - 1]) {				k -= a[n - 1];				cnt++;			}		}		n--;	}	cout << cnt;	return 0;}

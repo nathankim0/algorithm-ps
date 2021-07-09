@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int n, k,nP=1,kP=1,tP=1;	cin >> n;	for (int i = 0; i < n; i++) { nP *= (n - i); }    cout<<nP;}

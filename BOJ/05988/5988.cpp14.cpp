@@ -1,0 +1,1 @@
+#include <iostream>#include <string>using namespace std;int main() {	int N;	string a;	cin >> N;	for (int i = 0; i < N; i++) {		cin >> a; 		//1000을 입력하면 길이 4인 배열 생성		//a[0]=1 a[1]=0 a[2]=0 a[3]=0 		if (a[a.length() - 1] % 2 == 0) cout << "even" << endl;		//총 길이보다 1만큼 작은 인덱스의 배열 값 = 1의 자리 숫자		else cout << "odd" << endl;	}	}

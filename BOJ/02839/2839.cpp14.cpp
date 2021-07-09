@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int N, three = 0;	cin >> N;	while (1) {		if (N % 5 == 0) {			cout << N / 5 + three;			break;		}		else if (N < 0) {			cout << "-1";			break;		}		N -= 3;		three++;	}}

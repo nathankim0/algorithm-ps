@@ -1,0 +1,1 @@
+#include <iostream>#include <vector>#include <list>using namespace std;int main() {	string str;	cin >> str;	if (str.length() == 2) {		cout<<str[0]-'0' + str[1]-'0';	}	else if (str.length() == 4) {		cout << 20;	}	else {		if (str[1] - '0' == 0) {			cout << 10 + (str[2] - '0');		}		else cout << str[0] - '0' + 10;	}}

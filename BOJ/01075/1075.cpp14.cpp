@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int a,b;	cin >> a>>b;	a = a - a % 100;	int t = b - (a % b);	if (t == b) t = 0;	int result = (a + t) % 100;	if(result<10)	cout <<"0"<< result <<endl;	else cout << result << endl;}

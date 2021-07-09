@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int hansu(int i) {	int res = 99;	int a, b, c;	for (int j = 100; j <= i; j++) {		a = j / 100;		b = (j / 10) % 10;		c = j % 10;		if ((a - b) == (b - c)) res++;	}	return res;}int main() {	int i;	cin >> i;	if (i < 100) cout << i;	else cout << hansu(i);}

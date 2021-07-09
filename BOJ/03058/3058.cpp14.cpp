@@ -1,0 +1,1 @@
+#include <iostream>#include <algorithm>#include <math.h>#include <string>#include <vector>using namespace std;int main() {	int t;	cin >> t;	while (t--) {		int sum = 0;		int comp = 101;		int a;		for (int i = 0; i < 7; i++) {			cin >> a;			if (a % 2 == 0) {				sum += a;				if (comp > a) {					comp = a;				}			}		}		printf("%d %d\n", sum, comp);	}}

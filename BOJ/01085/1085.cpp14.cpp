@@ -1,0 +1,1 @@
+#include <iostream>#include <algorithm>using namespace std;int main() {	int x, y, w, h;	cin >> x >> y >> w >> h;	int sum1 = w - x;	int sum2 = h - y;	int result = min(x, min(y, min(sum1, sum2)));	cout << result;}

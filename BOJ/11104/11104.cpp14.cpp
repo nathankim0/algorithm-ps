@@ -1,0 +1,1 @@
+#include <iostream>#include <string>#include <math.h>using namespace std;int main() {	int n;	cin >> n;	while (n--) {		int sum = 0;		int cnt = 0;		string s;		cin >> s;		for (int i = 23; i >=0; i--) {			sum += (s[i] - '0') * pow(2, cnt);			cnt++;		}		cout << sum << endl;	}}

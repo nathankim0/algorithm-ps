@@ -1,0 +1,1 @@
+#include <iostream>#include <algorithm>using namespace std;int main() {	int x, y, sum = 0, sum2[4] = { 0 },max;	for (int i = 0; i < 4; i++) {		cin >> x >> y;		sum =sum + y - x;		sum2[i] = sum;	}	for (int i = 0; i < 3; i++) {		if (sum2[i] < sum2[i + 1]) {			max = sum2[i + 1];		}	}	cout << max;}

@@ -1,0 +1,1 @@
+n=int(input())def cal(num, op):    if op == '@':        num*=3    elif op=='%':        num+=5    elif op=='#':        num-=7    return numfor _ in range(n):    a=input().split()    result=float(a[0])    for i in range(1,len(a)):        result = cal(result,a[i])    print(format(result,".2f"))

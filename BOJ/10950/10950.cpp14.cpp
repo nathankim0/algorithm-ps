@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int n, x,y;	cin >> n;	int* arr = new int[n];	for (int i = 0; i < n; i++) {		cin >> x>>y;		arr[i] = x + y;	}	for (int i = 0; i < n; i++) {		cout << arr[i] << endl;	}}

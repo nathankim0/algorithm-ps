@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int gcd(int x,int y) {	int z;	z = x%y;	if (!z) return y;	else gcd(y, z);}int main() {	int n;	int a, b;	cin >> n;	while (n--) {		cin >> a >> b;		if (a < b) swap(a, b);		int GCD = gcd(a, b);		cout << GCD*(a/GCD)*(b/GCD) <<endl;	}}

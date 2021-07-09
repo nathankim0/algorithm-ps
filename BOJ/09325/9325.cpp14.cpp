@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int t;	cin >> t;	while (t--) {		int s;		cin >> s;		int n;		cin >> n;		int p, q;		int sub = 0;		for (int i = 0; i < n; i++) {			cin >> p >> q;			sub += p*q;		}		cout << s+sub<<endl;	}}

@@ -1,0 +1,1 @@
+#include <iostream>#include <cstring>using namespace std;int main() {	char n[1000000];	cin.getline(n, 1000000);	int len = strlen(n);	int count = 1;	for (int i = 0; i < len; i++) {		if (n[i] == ' ')			count++;	}	if (n[0] == ' ')		count--;	if (n[len - 1] == ' ')		count--;	cout << count;	return 0;}

@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int dp[10001];int fibo(int x) {	dp[0] = 0;	dp[1] = 1;	if (x == 0)return 0;	if (x == 1)return 1;	return dp[x] = fibo(x - 1) + fibo(x - 2);}int main() {	int n;	cin >> n;	cout << fibo(n);}

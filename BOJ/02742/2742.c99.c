@@ -1,0 +1,1 @@
+#include <stdio.h>int main(){	int N, num;	scanf("%d", &N);	for (num = 1; num <= N; N--)	{		printf("%d\n", N);	}	return 0;}

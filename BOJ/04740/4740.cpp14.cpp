@@ -1,0 +1,1 @@
+#include <iostream>#include <algorithm>#include <vector>#include <string>using namespace std;int main() {	string str;	while (1) {		getline(cin, str, '\n');		if (str == "***") break;		else {			for (int i = str.length() - 1; i >= 0; i--) {				cout << str[i];			}			printf("\n");		}	}}

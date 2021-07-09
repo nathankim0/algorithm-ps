@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int n;	int x, y;	cin >> n;	while (n--) {		cin >> x >> y;		printf("You get %d piece(s) and your dad gets %d piece(s).\n",x/y,x%y);	}}

@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int n;	cin >> n;	n = 1000 - n;	int cnt = 0;	int money[6] = { 500,100,50,10,5,1 };	while (n != 0) {		for (int i = 0; i < 6; i++) {			if (n >= money[i]) {				n -= money[i];				cnt++;				break;			}		}	}	cout << cnt;}

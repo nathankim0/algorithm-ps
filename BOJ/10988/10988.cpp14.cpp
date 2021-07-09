@@ -1,0 +1,1 @@
+#include <iostream>#include <cstdio>#include <cmath>#include <algorithm>#include <vector>#include <string>using namespace std;int main() {	string str;	cin >> str;	int j = str.length() - 1;	bool check = true;	for (int i = 0; i < str.length(); i++) {		if (str[i] != str[j]) check = false;		j--;	}	if (check) cout << '1';	else cout << '0';}

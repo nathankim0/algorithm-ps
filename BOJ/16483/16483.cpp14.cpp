@@ -1,0 +1,1 @@
+#include <iostream>#include <math.h>using namespace std;int main() {	int t;	cin >> t;	printf("%.0f", pow(t, 2) / 4);}

@@ -1,0 +1,1 @@
+#include <iostream>#include <queue>using namespace std;int main() {	int n;	priority_queue<int> q;	scanf("%d", &n);	int tmp;	for (int i = 0; i < n*n; i++) {		scanf("%d", &tmp);		q.push(-tmp);		if (q.size() == n+1) {			q.pop();		}	}	printf("%d", -q.top());	}

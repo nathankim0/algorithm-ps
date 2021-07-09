@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int d, d2;	const double pi = 3.141592;	cin >> d >> d2;	printf("%.6f", 2 * d + 2 * pi*d2);}

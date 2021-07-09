@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int a, b, c;	int a2, b2, c2;	int a3, b3, c3;	int n = 3;	while (n--) {		cin >> a >> b >> c;		cin >> a2 >> b2 >> c2;		a3 = a2 - a;		b3 = b2 - b;		c3 = c2 - c;		if (c3< 0) {			b3--;			c3 = c3 + 60;		}		if (b3 < 0) {			a3--;			b3 = b3 + 60;		}		printf("%d %d %d\n", a3, b3, c3);	}}

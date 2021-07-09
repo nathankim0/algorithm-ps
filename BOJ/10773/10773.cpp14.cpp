@@ -1,0 +1,1 @@
+#include <iostream>#include <vector>using namespace std;int main() {	int a;	vector<int>b;	int c;	cin >> a;	while (a--) {		cin >> c;		if (c != 0) {			b.push_back(c);		}		else {			b.pop_back();		}		if (b.empty() == true) {			b.push_back(0);		}	}	int sum = 0;	for (int i = 0; i < b.size(); i++) {		sum += b[i];	}	cout << sum;}

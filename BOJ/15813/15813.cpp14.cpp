@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	string name;	int sum=0;	int n;	cin >> n;	cin >> name;	for (int i = 0; i < n; i++) {		sum += name[i];	}	cout<<sum - n * 64;}

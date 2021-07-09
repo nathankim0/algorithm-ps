@@ -1,0 +1,1 @@
+#include <iostream>#include <algorithm>#include <vector>using namespace std;int main() {	int n;	cin >> n;	vector<int> vec;	int a;	while (n--) {		cin >> a;		vec.push_back(a);	}	sort(vec.begin(), vec.end());	cout << vec.front()<<" "<<vec.back();}

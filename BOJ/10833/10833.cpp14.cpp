@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int N,sum=0;	cin >> N;	int *stud = new int[N];	int *apple = new int[N];	int *left = new int[N];	for (int i = 0; i < N; i++) {		cin >> stud[i] >> apple[i];		left[i] = apple[i] % stud[i];	}	for (int i = 0; i < N; i++) {		sum += left[i];	}	cout << sum;}

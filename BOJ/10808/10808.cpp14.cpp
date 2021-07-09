@@ -1,0 +1,1 @@
+#include <stdio.h>#include <cstring>int main() {	char word[100];	scanf("%s", word);	int cnt['z' - 'a' + 1] = { 0, };	for (int i = 0; i < strlen(word); i++) {		cnt[word[i]-'a']++;	}	for (int i = 0; i <= 'z'-'a'; i++) {		printf("%d ", cnt[i]);	}}

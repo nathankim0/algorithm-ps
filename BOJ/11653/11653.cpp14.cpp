@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;void func(int n) {	for (int i = 2; i <= n; i++) {		if (n%i == 0) {			cout << i << '\n';			n /= i;			func(n);			break;		}	}}int main() {	int n;	//10은 2, 5, 10	//2부터 나눠 몫을 다시 2부터 나눠	cin >> n;	func(n);}

@@ -1,0 +1,1 @@
+a,b = map(int, input().split())c=int(input())plusHour = (b+c)/60c= (b+c)%60a += plusHoura%=24print(int(a),int(c))

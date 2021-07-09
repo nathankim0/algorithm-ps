@@ -1,0 +1,1 @@
+#include <iostream>#include <algorithm>using namespace std; int main(){int t;int a,sum=0;cin >> t;int c=t;int* arr=new int[t];for (int i=0;i<t;i++){cin>>arr[i];}sort(arr,arr+t);for (int i=0;i<t;i++){sum+=arr[i]*c;c--;}cout<<sum;}

@@ -1,0 +1,1 @@
+#include <iostream>#include <algorithm>#include <vector>#include <queue>#include <string.h>#include <cstdio>using namespace std;int main() {	int num_real;	long long real[51];	long long sub = 1;	cin >> num_real;	for (int i = 0; i < num_real; i++) {		cin >> real[i];	}	sort(real, real + num_real);	cout << real[0] * real[num_real - 1];}

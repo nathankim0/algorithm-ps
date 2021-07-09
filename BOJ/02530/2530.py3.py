@@ -1,0 +1,1 @@
+a,b,c = map(int, input().split())d=int(input())c+=dplusM = c/60c%=60b+=plusMplusH = b/60b%=60a+=plusHa%=24print(int(a),int(b),int(c))

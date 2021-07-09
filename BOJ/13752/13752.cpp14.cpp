@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int testcase;	cin >> testcase;	int *N = new int[testcase];	for (int i = 0; i < testcase; i++) {		cin >> N[i];	}	for (int i = 0; i < testcase; i++) {		for (int j = 0; j < N[i]; j++) {			cout << "=";		}		cout << endl;	}}

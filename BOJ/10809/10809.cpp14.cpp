@@ -1,0 +1,1 @@
+#include <iostream>#include <string>using namespace std;int main() {	int alpha[27];	for (int t = 0; t < 26; t++) {		alpha[t] = -1;	}	string str;	cin >> str;	for (int j = 0; j < 26; j++) {		for (int i = 0; i < str.size(); i++) {			if (str[i] == 97 + j && alpha[j] == -1) { 				alpha[j] = i; 			}		}	}	for (int t = 0; t < 26; t++) {		cout << alpha[t] << ' ';	}}

@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	double t=1;	while (t > 0) {		cin >> t;		if (t < 0) break;		printf("Objects weighing %.2f on Earth will weigh %.2f on the moon.\n", t, t * 0.167);	}}

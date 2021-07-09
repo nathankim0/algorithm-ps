@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int n;	cin >> n;	int cnt0 = 0, cnt1 = 0;	int tmp;	for (int i = 0; i < n; i++) {		cin >> tmp;		if (tmp == 0) cnt0++;		else cnt1++;	}	if (cnt0 > cnt1) {		cout << "Junhee is not cute!";	}	else cout << "Junhee is cute!";}

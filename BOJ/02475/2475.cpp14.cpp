@@ -1,0 +1,1 @@
+#include <iostream>#include <math.h>using namespace std;int main() {	int n;	int arr[6],sum=0;	for (int i = 0; i < 5; i++) {		cin >> arr[i];		arr[i] = pow(arr[i], 2.0);	}	for (int i = 0; i < 5; i++) {		sum += arr[i];	}	n = sum % 10;	cout << n;}

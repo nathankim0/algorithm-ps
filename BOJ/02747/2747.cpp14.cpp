@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int dp[100000] = { 0 };int pibonachi(int x) {	if (x == 0) return 0;	if (x == 1) return 1;	if (dp[x] != 0) return dp[x];	return dp[x] = pibonachi(x - 1) + pibonachi(x - 2);}int main() {	int n;	cin >> n;	cout << pibonachi(n);}

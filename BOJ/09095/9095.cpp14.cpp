@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int dp[1000];int func(int x) {	if (x == 1)return dp[1];	if (x == 2)return dp[2];	if (x == 3)return dp[3];	else return dp[x] = func(x - 1) + func(x - 2) + func(x - 3);}int main() {	int t;	cin >> t;	int n;	dp[1] = 1;	dp[2] = 2;	dp[3] = 4;	for (int i = 0; i < t; i++) {		cin >> n;		cout << func(n) << endl;	}}

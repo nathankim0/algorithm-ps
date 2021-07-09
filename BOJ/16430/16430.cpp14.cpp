@@ -1,0 +1,1 @@
+#include <iostream>#include <vector>#include <list>using namespace std;int main() {	int a, b;	cin >> a >> b;	cout << b - a << " " << b;}

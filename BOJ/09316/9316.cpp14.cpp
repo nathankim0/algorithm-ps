@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {	int testcase;	cin >> testcase;	for (int i = 1; i <= testcase; i++) {		cout << "Hello World, Judge " << i << "!" << endl;	}		}

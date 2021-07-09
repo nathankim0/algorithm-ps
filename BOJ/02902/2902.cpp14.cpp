@@ -1,0 +1,1 @@
+#include <iostream>#include <string>using namespace std;int main() {	string a;	cin >> a;	int size = a.size();	cout << a[0];	for (int i = 0; i < size; i++) {		if (a[i] == '-') cout << a[i + 1];	}}

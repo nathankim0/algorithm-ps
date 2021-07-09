@@ -1,0 +1,1 @@
+#include <iostream>#include <algorithm>using namespace std;int main() {	int t,cnt=1;	cin >> t;	while (t--) {		int a[5];		for (int i = 0; i < 5; i++) {			cin >> a[i];		}		sort(a, a + 5);		cout << "Case #" << cnt << ": " << a[4]<<endl;		cnt++;	}}
